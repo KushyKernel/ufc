@@ -68,8 +68,10 @@ def search_sherdog_profiles(ufc_data):
     fighter_names = [fighter["name"] for fighter in ufc_data]
     result_sd = []  # To store Sherdog search results
     max_retries = 5
+    progress_interval = 100  # Print progress every 100 fighters
+    reported_progress = 0
 
-    for fighter in fighter_names:
+    for i, fighter in enumerate(fighter_names, start=1):
         query = f"{fighter} Sherdog"
         retry_count = 0
         fighter_data = {"name": fighter, "url": None}
@@ -91,9 +93,12 @@ def search_sherdog_profiles(ufc_data):
         result_sd.append(fighter_data)
         # Pause between queries to avoid being blocked
         time.sleep(random.uniform(1, 5))
-
-    print("Sherdog Search Results:")
-    print(json.dumps(result_sd, indent=2))
+        
+        # Check and print progress every 'progress_interval' fighters
+        if i // progress_interval > reported_progress:
+            reported_progress = i // progress_interval
+            print(f"Processed {i} of {len(fighter_names)} fighters.")
+    
     return result_sd
 
 def merge_data(ufc_data, sherdog_results):
