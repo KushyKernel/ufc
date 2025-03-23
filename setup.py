@@ -6,7 +6,7 @@ setup(
     description="A Python package to scrape UFC events and fighter data",
     author="Tife Kusimo",
     author_email="kushykernel@yahoo.com",
-    url="https://github.com/ChildishClassifier/UFC",  # Repository URL
+    url="https://github.com/KushyKernel/UFC",  # Repository URL
     packages=find_packages(),
     install_requires=[
         "requests",
