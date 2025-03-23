@@ -1,4 +1,4 @@
-from .ufc_scraper  import (
+from .fd_ufc_scraper  import (
     get_fighter,
     get_event,
     get_upcoming_events

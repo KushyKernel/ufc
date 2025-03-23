@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="ufc_scraper_fighter_details",
+    name="fd_ufc_scraper",
     version="1.0.0",
     description="A Python package to scrape UFC events and fighter data",
     author="Tife Kusimo",
