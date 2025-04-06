@@ -1,0 +1,10 @@
+README.md
+setup.py
+fd_ufc_scraper/__init__.py
+fd_ufc_scraper/config.py
+fd_ufc_scraper/fd_ufcscraper.py
+fd_ufc_scraper.egg-info/PKG-INFO
+fd_ufc_scraper.egg-info/SOURCES.txt
+fd_ufc_scraper.egg-info/dependency_links.txt
+fd_ufc_scraper.egg-info/requires.txt
+fd_ufc_scraper.egg-info/top_level.txt

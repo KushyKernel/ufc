@@ -5,7 +5,7 @@ setup(
     version="1.0.0",
     description="A Python package to scrape UFC events and fighter data",
     author="Tife Kusimo",
-    author_email="kushykernel@yahoo.com",
+    author_email="tife.kusimo@gmail.com",
     url="https://github.com/KushyKernel/UFC",  # Repository URL
     packages=find_packages(),
     install_requires=[
